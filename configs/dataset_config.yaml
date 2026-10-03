@@ -1,0 +1,31 @@
+# Dataset Generation Configuration
+
+audio:
+  sample_rate: 16000
+  min_utterance_sec: 3.0
+  min_rms_db: -25.0
+  gain_range_db: [-4.0, 4.0]
+
+speakers:
+  counts: [2, 3, 4]
+  probabilities: [0.70, 0.20, 0.10]
+
+scheduling:
+  min_overlap: 0.30
+  max_overlap: 0.70
+  max_allowed_overlap: 0.75
+  min_start_delay: 0.5
+  max_schedule_attempts: 50
+  max_placement_attempts: 20
+
+execution:
+  seed: 42
+  num_workers: null # Auto-detects (cpu_count - 1) if null
+  chunk_size: 500
+  max_runtime_hours: 10.0
+  output_dir: "./conversational_dataset_v2"
+  checkpoint_filename: "checkpoint.json"
+  time_split_ratios:
+    train: 0.8
+    val: 0.1
+    test: 0.1
