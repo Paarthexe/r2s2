@@ -1,0 +1,8 @@
+{
+  "enc_filters": 64,
+  "enc_kernel": 16,
+  "enc_stride": 8,
+  "dprnn_hidden": 128,
+  "dprnn_layers": 6,
+  "chunk_size": 100
+}
