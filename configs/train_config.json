@@ -1,0 +1,31 @@
+{
+  "dataset_dir": "./conversational_dataset_v2",
+  "sample_rate": 16000,
+  "crop_seconds": 4.0,
+  "batch_size": 16,
+  "epochs": 40,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "warmup_steps": 400,
+  "clip_grad": 5.0,
+  "stft_lambda_max": 0.1,
+  "stft_lambda_floor": 0.01,
+  "stft_warmup_start": 8,
+  "stft_warmup_end": 15,
+  "unroll_prob": 0.5,
+  "unroll_start_epoch": 20,
+  "consistency_weight": 0.1,
+  "val_interval": 5,
+  "num_workers": 4,
+  "device": null,
+  "checkpoint_dir": "./checkpoints",
+  "resume_checkpoint": null,
+  "model": {
+    "enc_filters": 64,
+    "enc_kernel": 16,
+    "enc_stride": 8,
+    "dprnn_hidden": 128,
+    "dprnn_layers": 6,
+    "chunk_size": 100
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "checkpoint_path": "./checkpoints/best.pt",
+  "rms_threshold": 0.01,
+  "max_iters": 6,
+  "sample_rate": 16000,
+  "device": null
+}
